@@ -1,5 +1,5 @@
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, } from "@/components/ui/sidebar"
-import { ArrowRightLeft, Home } from "lucide-react"
+import { ArrowRightLeft, Home, ListCheck } from "lucide-react"
 
 export function AppSidebar() {
     // Menu items.
@@ -13,6 +13,11 @@ export function AppSidebar() {
             title: "Base64 Converter",
             url: "/base64converter",
             icon: ArrowRightLeft,
+        },
+        {
+            title: "To-Do List",
+            url: "/todo-list",
+            icon: ListCheck,
         }
     ]
     return (

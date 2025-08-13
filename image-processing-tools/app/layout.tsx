@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { AppSidebar } from "./app-sidebar";
 import "./globals.css";
 import { TopMenuBar } from "./top-menubar";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
             <div className="m-2 max-w-svw">
               <TopMenuBar />
               {children}
+              <Toaster />
             </div>
           </main>
         </SidebarProvider>
