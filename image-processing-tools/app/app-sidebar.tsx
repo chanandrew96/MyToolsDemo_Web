@@ -1,5 +1,5 @@
 import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuButton, SidebarMenuItem, } from "@/components/ui/sidebar"
-import { ArrowRightLeft, Home, ListCheck } from "lucide-react"
+import { ArrowRightLeft, Home, KeyRound, ListCheck } from "lucide-react"
 
 export function AppSidebar() {
     // Menu items.
@@ -18,6 +18,11 @@ export function AppSidebar() {
             title: "To-Do List",
             url: "/todo-list",
             icon: ListCheck,
+        },
+        {
+            title: "Login",
+            url: "/login",
+            icon: KeyRound,
         }
     ]
     return (
